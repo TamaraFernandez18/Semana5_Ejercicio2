@@ -1,0 +1,122 @@
+body {
+    background: rgb(250, 229, 229);
+}
+
+.grid-container {
+    margin: 10px;
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "main main aside"
+        "main main aside"
+        "main main aside"
+        "main main aside"
+        "footer footer footer";
+    grid-template-rows: repeat(auto-fil, 1fr);
+    height: 90%;
+}
+
+.grid-header {
+    background: rgb(212, 157, 200);
+    grid-area: header;
+    border-bottom: 10px solid rgb(250, 229, 229);
+}
+
+.grid-main {
+    grid-area: main;
+    color: rgb(97, 26, 67);
+}
+
+.grid-aside {
+    background: rgb(255, 184, 237);
+    grid-area: aside;
+    padding: 10px;
+    border-bottom: 10px solid rgb(250, 229, 229);
+    margin-left: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(138, 43, 226);
+}
+
+.grid-footer {
+    background: rgb(226, 179, 214);
+    grid-area: footer;
+    color: rgb(252, 252, 252);
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    line-height: 200px;
+    color: rgb(247, 232, 244);
+    font-size: 50px;
+}
+
+nav {
+    background: rgb(85, 29, 102);
+    height: 50px;
+    border-bottom: 5px solid (250, 229, 229);
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+    color: rgb(224, 210, 222);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.article {
+    width: 750px;
+    height: 450px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+#separacion {
+    clear: both;
+}
+
+#imagen1 {
+    width: 25%;
+    float: right;
+    border-radius: 15px;
+    border: 5px solid rgb(61, 43, 57);
+
+}
+
+#imagen2 {
+    width: 30%;
+    float: left;
+    border-radius: 15px;
+    border: 5px solid rgb(61, 43, 57);
+}
+
+#texto1 {
+    width: 80%;
+    float: left;
+    font-family: Verdana;
+    font-size: 150%;
+    text-align: justify;
+}
+
+#texto2 {
+    width: 75%;
+    float: right;
+    font-size: 200%;
+    text-align: justify;
+}
+
+#p_texto1 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#p_texto2 {
+    text-align: center;
+}
